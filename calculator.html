@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        span {
+            color: red;
+        }
+        p {
+            color: green;
+        }
+    </style>
+    <title>simple and scientific calculator</title>
+</head>
+
+<body>
+    <h1>Simple and Scientific Calculator</h1>
+    <div>
+        <form name="calc" action="post">
+            <label for="calcoperations"></label>
+            <select name="calcoperations" id="operations">
+                <option value="0">Addition</option>
+                <option value="1">Subtraction</option>
+                <option value="2">Multiplication</option>
+                <option value="3">Division</option>
+            </select>
+            <br><br><br>
+
+            <label for="num1">Enter the value1:</label>
+            <input type="number" id="num1" name="num1"><br><br>
+            <label for="num2">Enter the value2:</label>
+            <input type="number" id="num2" name="num2"><br><br>
+            <span id="error"></span><br><br>
+            <p id="success"></p><br><br>
+            <input type="button" onclick="mySubmitFunction()" value="Submit"> <br>
+
+
+        </form>
+    </div>
+   
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+
+</html>
